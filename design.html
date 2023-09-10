@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Section</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://kit.fontawesome.com/e513dbdc77.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <header>
+       
+        <nav class="nav-right">
+           <div class="nav-links">
+            <ul>
+                <li><a href="index1.html" id="home-link" >Home</a></li>
+                <li><a href="about1.html" id="blog-link" >About</a></li>
+                <li><a href="blog2.html" id="design-link">Blogs</a></li>
+                <li><a href="design.html" id="essay-link"class="active" >Design</a></li>
+                <li><a href="visuals.html" id="essay2-link">Visuals</a></li>
+                <li><a href="visuals2.html" id="essay2-link" >Visuals2</a></li>
+                
+            </ul> 
+            
+
+           </div>
+           
+           
+            
+    
+    
+        </nav>
+
+        
+
+        
+    </header>
+
+    
+
+    
+
+    <div class="gallery-wrap">
+        <img src="Media/pxfuel (1).jpg" alt="Image Description" width="1500" height="900">
+
+        <img src="Media/backkk (1).png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="Media/Homepage Nasa wireframe (1).png"></span>
+                <span><img src="Media/About Nasa wireframe (1).png"></span>
+             
+    
+            </div>
+           
+
+            <div>
+                <span><img src="Media/Design Nasa wireframe (1).png"></span>
+            </div>
+            <div>
+                
+                <span><img src="Media/Blog Nasa wirefram (1).png"></span>
+            
+            </div>
+            <div>
+                <span><img src="Media/Full Blog Nasa wireframe (1).png"></span>
+            </div>
+
+            <div>
+                <span><img src="Media/Visuals Nasa wireframe (1).png"></span>
+            </div>
+
+            <div>
+                <span><img src="Media/Visuals2 Nasa wireframe (1).png"></span>
+            </div>
+
+        </div>
+        <img src="Media/nexxxt (1).png" id="nextBtn">
+
+    </div>
+
+    <div>
+        <h1>Design Documentation</h1>
+    <h1>Data Visual</h1>
+    <p>I chose to use both line graphs and scatter plots to represent the Geomagnetic Storm (GTS) data from NASA for different reasons. <br> Line graphs are effective for showing trends and changes over time, making them suitable for illustrating how the intensity of GTS events varies across months and years. <br> In this context, they provide a clear visual representation of the temporal patterns in geomagnetic activity. <br> On the other hand, scatter plots are valuable for displaying individual data points, making them useful for pinpointing specific storm events and their corresponding intensities. <br> This combination of line graphs and scatter plots allows for a comprehensive exploration of GTS data, offering insights into both long-term trends and isolated events, thereby enhancing the understanding of geomagnetic storm occurrences and their impact.</p>
+    </div>
+    <br>
+    <div>
+        
+    <h1>Styling</h1>
+    <p>The design of this project was inspired by NASA and outer space-related themes, with the choice of colors like blue and white reminiscent of the vast cosmos and the Earth's atmosphere. <br> These colors not only evoke a sense of exploration but also create a visually appealing and calming atmosphere for users. <br> A consistent font style was employed throughout the project to maintain a cohesive and professional appearance, ensuring that the information is easy to read and navigate. <br>
+
+        In the design section, I implemented a scrollable function to create a gallery for images. <br> This feature was crucial to maintain a clean and organized layout, preventing images from appearing cluttered on the page. <br> Users can now effortlessly scroll through the gallery, providing a more user-friendly experience and ensuring that the visual content is easily accessible and visually engaging. <br> The design choices were made not only to pay homage to NASA's aesthetic but also to enhance user experience and readability.</p>
+    </div>
+
+
+
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel" , (evt) =>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY
+        });
+
+       nextBtn.addEventListener("click" , ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+       });
+
+       backBtn.addEventListener("click" , ()=>{
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+       });
+
+
+    </script>
+
+    
+
+
+    
+
+   
+    
+
+</body>
+</html>

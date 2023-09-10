@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsterrat:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+
+
+
+:root{
+    --primary: #1E1E1E;
+    --dark: #121212;
+    --pure: #ffffff;
+    --gray: #1d1d1d;
+    --mild: #b9b8b8; 
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container{
+    width: 1460px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--pure);
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,1), rgba(0,0,0,2)),
+                url('Media/starry-night-sky.jpg'); 
+    min-height: 100vh;
+    background-size: cover;
+}
+
+
+
+header .brand {
+    font-family: 'Monsterrat', Arial, Helvetica, sans-serif; /* Use the same font family */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: 500; /* Adjust font weight if needed */
+}
+
+
+
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Add this CSS to your existing styles */
+
+header .nav-right .nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-right .nav-links ul li {
+    margin-right: 30px;
+}
+
+header .nav-right .nav-links ul li a {
+    text-decoration: none;
+    color: var(--pure);
+    position: relative;
+}
+
+header .nav-right .nav-links ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust this value to control the line position */
+    width: 100%;
+    height: 2px;
+    background: var(--pure);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .nav-right .nav-links ul li a:hover:after,
+header .nav-right .nav-links ul li a.active:after {
+    transform: scaleX(1);
+}
+
+.hero .cta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+}
+
+.hero .cta h1{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero .cta > div{
+    flex: 1;
+
+}
+
+.hero .cta .left-section{
+    padding: 0 60px 0 30px;
+}
+.hero .cta .right-section img{
+    height: 70vh;
+    transform: rotate(20deg);
+    animation: moveInSpace 12s ease-in-out infinite alternate;
+
+}
+
+@keyframes moveInSpace{
+    50%{
+        transform: translateY(100px) rotate(-30deg) scale(0.8);
+    }
+}

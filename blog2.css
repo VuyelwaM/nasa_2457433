@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsterrat:wght@100;300;400;500;700&display=swap');
+@import './variables.css';
+@import './utilities.css';
+
+:root {
+    --primary: #1E1E1E;
+    --dark: #121212;
+    --pure: #ffffff;
+    --gray: #1d1d1d;
+    --mild: #b9b8b8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 1460px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--pure);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 2)),
+                url('Media/starry-night-sky.jpg');
+    background-size: cover;
+}
+
+header .brand {
+    font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav-right .nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-right .nav-links ul li {
+    margin-right: 30px;
+}
+
+header .nav-right .nav-links ul li a {
+    text-decoration: none;
+    color: var(--pure);
+    position: relative;
+}
+
+header .nav-right .nav-links ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: var(--pure);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+header .nav-right .nav-links ul li a:hover:after,
+header .nav-right .nav-links ul li a.active:after {
+    transform: scaleX(1);
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.home{
+    width: 100%;
+    min-height: 440px;
+    background: var(--container-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    color: var(--bg-color);
+    text-align: center;
+}
+
+.home-title{
+    font-size: 3.5rem;
+}
+
+.home-subtitle{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.post-filter{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+}
+
+.filter-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.post-box{
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem;
+
+}
+
+.post-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.post-date{
+    display: flex;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.post-description{
+     font-size: 0.9rem;
+     line-height: 1.5rem;
+     margin: 5px 0 10px;
+     display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    background: var(--container);
+
+}
+
+.post-container{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+}
+
+.back-home{
+    color:black;
+    font-size: 0.9rem;
+}
+
+.header-title{
+    width:90%;
+    font-size: 2.6rem;
+    color:#fd8f44;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-content{
+    margin-top: 10rem !important;
+}
+
+.sub-heading{
+    font-size: 1.2rem;
+}
+
+.post-text{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+}

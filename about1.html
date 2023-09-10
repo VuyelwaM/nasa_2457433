@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+   
+    <section>
+        <img src="Media/bg (1).jpg" id="bg">
+        <img src="Media/moon (1).png" id="moon">
+        <img src="Media/mountain (1).png" id="mountain">
+        <img src="Media/road (1).png" id="road">
+        <h2 id="text">Data Visualisation</h2>
+
+    </section>
+     
+       
+    <header>
+       
+        <nav class="nav-right">
+           <div class="nav-links">
+            <ul>
+                <li><a href="index1.html" id="home-link" >Home</a></li>
+                <li><a href="about1.html" id="blog-link" class="active">About</a></li>
+                <li><a href="blog2.html" id="design-link">Blogs</a></li>
+                <li><a href="design.html" id="essay-link">Design</a></li>
+                <li><a href="visuals.html" id="essay2-link">Visuals</a></li>
+                <li><a href="visuals2.html" id="essay2-link">Visuals2</a></li>
+                
+            </ul> 
+            
+
+           </div>
+           
+           
+            
+    
+    
+        </nav>
+
+        
+    </header>
+
+        
+    
+   
+    <section class="rocket container" id="rocket">
+        <div class="left-block">
+            <div class="block">
+                <h1>About Float</h1>
+                <p>"Welcome to the captivating world of data visualization through our celestial window, where science meets art in the cosmos. Our website, a gateway to the mysteries of outer space, is designed to immerse you in the wonders of our universe. Through the power of NASA's APIs, we harness the raw data of geomagnetic storms, a phenomenon shrouded in intrigue, and transform it into visually compelling insights.
+
+                    With each visit, you embark on a journey into the heart of space weather, where magnetic disturbances come alive as vivid graphs, charts, and diagrams. Our goal is to make the complex comprehensible, bridging the gap between scientific intricacies and your curiosity. As you explore our curated visualizations, you'll gain a deeper understanding of the ebb and flow of geomagnetic activity over time.
+                    
+                    Whether you're a space enthusiast, a curious mind, or a student of science, our website offers a unique blend of education and inspiration. Witness the dance of charged particles, understand the impact of geomagnetic storms on Earth's environment and technology, and marvel at the natural beauty of these unseen forces. Join us as we illuminate the hidden rhythms of the cosmos and unveil the stories written in the magnetosphere. Through artful representation and insightful commentary, we invite you to discover the captivating world of geomagnetic phenomena."</p>
+            </div>
+
+        </div>
+        <div class="rocket-body">
+           
+        </div>
+        <div class="right-block">
+            <div class="block">
+                <h1>Geomagnetic Storm (GST)</h1>
+                <p>Geomagnetic Storms (GST): Geomagnetic Storms are intriguing natural occurrences that arise from the interaction between the Earth's magnetic field and the solar wind—a stream of charged particles from the Sun. These storms can have significant effects on our planet, including beautiful auroras, disruptions in communication systems, and potential damage to power grids and satellites. Categorized by intensity levels from G1 to G5, they range from minor disturbances to severe events with widespread impacts.
+
+                    Importance and Significance: Monitoring Geomagnetic Storms is crucial due to their potential to disrupt modern technology. They can interfere with GPS systems, satellite communication, and even electrical grids, emphasizing the need for accurate prediction and preparedness.
+                    
+                    Visual Presentation: Visualizing GST data offers an engaging and informative way to comprehend this phenomenon. Real-time maps displaying storm activity worldwide, charts illustrating aurora intensity during different levels of storms, and simulations depicting the solar wind's journey and its impact on the magnetosphere can all provide insight into the complex dynamics of Geomagnetic Storms. By presenting this data visually, your website not only educates visitors but also highlights the importance of understanding and monitoring these captivating cosmic events for our technological well-being.
+                    </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    
+   
+    
+    
+   
+    
+   
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+
+    </script>
+
+    <script src="index.js"></script>
+
+    
+</body>
+</html>

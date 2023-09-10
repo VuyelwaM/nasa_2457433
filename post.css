@@ -1,0 +1,78 @@
+.wrapper {
+    margin: 20px auto;
+    width: 70%;
+    max-width: 800px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: orange;
+    box-shadow: 12px 12px 24px orangered, -12px -12px 24px #d44317;
+    border-radius: 30px;
+  }
+  
+  @media (max-width: 600px) {
+    .wrapper {
+      width: 90%;
+    }
+  }
+  
+  .like,
+  .dislike {
+    display: grid;
+    place-items: center;
+  }
+  
+  .icon {
+    margin-top: 40px;
+    font-size: 60px;
+    color: #0086b3;
+    cursor: pointer;
+    text-shadow: 5px 8px 15px #2a93b6;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    color: #ba0015;
+    transform: scale(1.2);
+  }
+  /* Add this rule to your existing CSS */
+body {
+    background: linear-gradient(135deg, rgb(234, 229, 229), rgba(0, 0, 0, 2)),
+                url('Media/starry-night-sky\ \(1\).jpg'); /* Replace 'path-to-your-background-image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+  
+  input {
+    margin-top: -90px;
+    margin-left: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: none;
+    font-size: 30px;
+    font-weight: 800;
+    pointer-events: none;
+    color: #0086b3;
+    text-shadow: 2px 2px 3px #2a93b6;
+  }
+
+  .post-text {
+    position: relative;
+    line-height: 1.5; /* Adjust the line height as needed */
+  }
+  
+  .post-text::after {
+    content: "";
+    display: block;
+    height: 4em; /* Adjust the height to control the spacing between lines */
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    pointer-events: none;
+  }

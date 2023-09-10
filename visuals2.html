@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Graph For GTS</title>
+    <link rel="stylesheet" href="visuals.css">
+</head>
+<body>
+    
+    <div>
+        <header>
+            <nav class="nav-right">
+               <div class="nav-links">
+                <ul>
+                    <li><a href="index1.html" id="home-link" >Home</a></li>
+                    <li><a href="about1.html" id="blog-link" >About</a></li>
+                    <li><a href="blog2.html" id="design-link">Blogs</a></li>
+                    <li><a href="design.html" id="essay-link"  >Design</a></li>
+                    <li><a href="visuals.html" id="essay2-link" >Visuals</a></li>
+                    <li><a href="visuals2.html" id="essay2-link" class="active">Visuals2</a></li>
+                </ul> 
+               </div>
+            </nav>
+        </header>
+       </div> <br>
+       <br>
+       <br>
+       <section>
+        <h2>Geomagnetic Storm Events For The Year 2021  </h2> <br>
+        <h2>Key: The X represent Years and Months And The Y axis is a scale that ranges from 0 to 9, with higher values indicating more intense geomagnetic disturbances.</h2>
+        <p>Kp = 0-1: Quiet geomagnetic conditions <br>
+            Kp = 2-3: Unsettled geomagnetic conditions <br>
+            Kp = 4-5: Active geomagnetic conditions <br>
+            Kp = 6-9: Storm-level geomagnetic conditions</p>
+    
+        <div>
+            <svg id="myPlot" style="width:500px;height:500px"></svg>
+        </div>
+       </section>
+    
+       <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="visuals2.js"></script>
+   
+</body>
+
+</html>
